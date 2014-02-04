@@ -1,0 +1,23 @@
+@import 'mixins';
+@import 'animations';
+
+body {
+	position: relative;
+}
+
+h1 {
+	background: red;
+	width: 150px;
+	position: absolute;
+}
+
+.slideIn {
+	@include animationMixin(slideIn, 1s, 1, normal, ease-out, forwards, 0);
+}
+
+h2 {
+	position: absolute;
+	width: 150%;
+	background-color: blue;
+	@include animationMixin(slideOut, 1s, infinite, normal, ease-out, forwards, 0);		
+}

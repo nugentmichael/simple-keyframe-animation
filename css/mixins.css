@@ -1,0 +1,3 @@
+/* -- Keyframe Mixin -- */
+/* Animation Mixin */
+/* Use - @include animationMixin(fadeIn, 1s, 1, normal, ease-out, forwards, 0)*/

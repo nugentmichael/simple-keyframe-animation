@@ -1,0 +1,143 @@
+/* -- Keyframe Mixin -- */
+/* Animation Mixin */
+/* Use - @include animationMixin(fadeIn, 1s, 1, normal, ease-out, forwards, 0)*/
+@-webkit-keyframes slideOut {
+  0% {
+    left: 0; }
+
+  100% {
+    left: 100%; } }
+
+@-moz-keyframes slideOut {
+  0% {
+    left: 0; }
+
+  100% {
+    left: 100%; } }
+
+@-o-keyframes slideOut {
+  0% {
+    left: 0; }
+
+  100% {
+    left: 100%; } }
+
+@-ms-keyframes slideOut {
+  0% {
+    left: 0; }
+
+  100% {
+    left: 100%; } }
+
+@-webkit-keyframes slideIn {
+  0% {
+    left: 100%; }
+
+  100% {
+    left: 0; } }
+
+@-moz-keyframes slideIn {
+  0% {
+    left: 100%; }
+
+  100% {
+    left: 0; } }
+
+@-o-keyframes slideIn {
+  0% {
+    left: 100%; }
+
+  100% {
+    left: 0; } }
+
+@-ms-keyframes slideIn {
+  0% {
+    left: 100%; }
+
+  100% {
+    left: 0; } }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+body {
+  position: relative; }
+
+h1 {
+  background: red;
+  width: 150px;
+  position: absolute; }
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 0;
+  -moz-animation-name: slideIn;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-direction: normal;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-delay: 0;
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0; }
+
+h2 {
+  position: absolute;
+  width: 150%;
+  background-color: blue;
+  -webkit-animation-name: slideOut;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 0;
+  -moz-animation-name: slideOut;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: normal;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-delay: 0;
+  animation-name: slideOut;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0; }
